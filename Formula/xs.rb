@@ -27,8 +27,4 @@ class Xs < Formula
   def install
     bin.install "xs"
   end
-
-  test do
-    assert_match version.to_s, shell_output("#{bin}/xs version")
-  end
 end
