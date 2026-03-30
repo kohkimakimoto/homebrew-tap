@@ -1,4 +1,4 @@
-class ClaudeSandbox < Formula
+class Wt < Formula
   desc "A CLI tool for managing Git worktrees"
   homepage "https://github.com/kohkimakimoto/wt"
   version "0.1.0"
