@@ -1,4 +1,4 @@
-lass Enclave < Formula
+class Enclave < Formula
   desc "A tool to run any command in a sandboxed environment using macOS's sandbox-exec"
   homepage "https://github.com/kohkimakimoto/enclave"
   version "3.0.0"
