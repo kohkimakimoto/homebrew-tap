@@ -1,16 +1,16 @@
 class Enclave < Formula
   desc "A tool to run any command in a sandboxed environment using macOS's sandbox-exec"
   homepage "https://github.com/kohkimakimoto/enclave"
-  version "3.0.0"
+  version "3.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kohkimakimoto/enclave/releases/download/v#{version}/enclave_#{version}_darwin_arm64.tar.gz"
-      sha256 "57f882477d0cddc7f344f848739d3ed4c960a1c36442f5f941d5d0c46872f372"
+      sha256 "4d73d23ddb1c4435fb159ae33f652ec09684003d11ca3a0f8b22a3eae335d631"
     else
       url "https://github.com/kohkimakimoto/enclave/releases/download/v#{version}/enclave_#{version}_darwin_amd64.tar.gz"
-      sha256 "8d82097fe708e8dec05a8a9578c1825fe7eaed4c7d1a1531c2950b33732938b2"
+      sha256 "411773c9074a3e60dd1dee9b66239cdedf62a9801f6298cd5decc703adc048a0"
     end
   end
 
