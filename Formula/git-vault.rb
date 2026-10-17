@@ -1,8 +1,8 @@
 class GitVault < Formula
   desc "Store age-encrypted files in a Git branch, separate from your application code"
   homepage "https://github.com/kohkimakimoto/git-vault"
-  url "https://github.com/kohkimakimoto/git-vault/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "301cbc32eb5cc0703cddfde113866ee31306e79064e16d1e9beca02f13a4253e"
+  url "https://github.com/kohkimakimoto/git-vault/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "0cdb9ced18039e183c00820c9cabaa0662dc275e3cce56af6bd9815719fda750"
   license "MIT"
 
   depends_on "age"
@@ -18,6 +18,6 @@ class GitVault < Formula
   end
 
   test do
-    assert_match "0.2.0", shell_output("#{bin}/git-vault version")
+    assert_match "0.3.0", shell_output("#{bin}/git-vault version")
   end
 end
