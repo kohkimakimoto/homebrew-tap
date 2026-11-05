@@ -1,8 +1,8 @@
 class GitArtifact < Formula
   desc "Manage development artifacts on a dedicated orphan Git branch"
   homepage "https://github.com/kohkimakimoto/git-artifact"
-  url "https://github.com/kohkimakimoto/git-artifact/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "390a021ca04ff3ec496e6661557136190374aef6a99ee3273949952c065ac0bd"
+  url "https://github.com/kohkimakimoto/git-artifact/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "9ebea7c3838feff4de8e7bba5301964c1ecca5795b3af604db9969ac8b287b65"
   license "MIT"
 
   def install
@@ -16,6 +16,6 @@ class GitArtifact < Formula
   end
 
   test do
-    assert_match "0.1.0", shell_output("#{bin}/git-artifact version")
+    assert_match "0.2.0", shell_output("#{bin}/git-artifact version")
   end
 end
